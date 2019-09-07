@@ -1,0 +1,29 @@
+<div style="background-color:darkgoldenrod">
+  <p>
+    main1-sub-b works!
+  </p>
+  
+  
+
+  <nav mat-tab-nav-bar>
+    <a mat-tab-link [routerLink]="['', { outlets: { sidebar: ['Main1SubBA'] }}]" routerLinkActive="active">Main1SubBA</a>
+    <a mat-tab-link [routerLink]="['', { outlets: { sidebar: ['Main1SubBB'] }}]" routerLinkActive="active">Main1SubBB</a>
+  </nav>
+  
+  
+  <router-outlet name="sidebar"></router-outlet>
+
+
+
+  <!--
+  <nav mat-tab-nav-bar>
+    <a mat-tab-link [routerLink]="['Main1SubB/Main1SubBA']" routerLinkActive="active">Main1SubBA</a>
+    <a mat-tab-link [routerLink]="['Main1SubB/Main1SubBB']" routerLinkActive="active">Main1SubBB</a>
+  </nav>
+  <router-outlet></router-outlet>
+  -->
+
+  
+
+
+  </div>
